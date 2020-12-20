@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Root */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('../img/background-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.message {
+  background: #f6f6f6;
+  color: #2d200f;
+  width: 500px;
+  height: 530px;
+  margin-right: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message h1 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.message p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  /* background-color: rebeccapurple; */
+  /* background-color: #4d4d4d; */
+  background-color: #2d200f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@media(max-width:600px) {
+  body {
+    display: block;
+    margin: 20px;
+    height: 100%;
+  }
+
+  .message,
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .message h1 {
+    font-size: 2rem;
+  }
+
+  .message p {
+    font-size: 1rem;
+  }
+
+  .carousel {
+    margin-top: 10px;
+  }
+
+}
